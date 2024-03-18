@@ -1,0 +1,107 @@
+.form-container {
+  text-align: center;
+}
+.form-container h1 {
+  font-size: 60px;
+  color: lightgray;
+  font-family: "Angkor", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.form-container h1 span {
+  color: lightblue;
+  font-weight: 500;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+.inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.inputDiv #date {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.inputDiv #time {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.inputDiv input:hover {
+  background-color: #00dbde;
+}
+.form-container button {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid white;
+}
+.form-container .time-display {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.form-container p {
+  color: lightblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid lightblue;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 500;
+  background-image: linear-gradient(90deg, #00dbde 1%, #fc00ff 100%);
+}
+.form-container p span {
+  color: white;
+  font-size: 32px;
+}
+
+.errorMessage {
+  margin-top: 30px;
+  font-size: 32px;
+  color: red;
+  background: transparent;
+  border: none;
+}
+@media screen and (max-width: 720px) {
+  .form-container h1 {
+    font-size: 32px;
+  }
+  .form-container p {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .form-container p span {
+    color: white;
+    font-size: 16px;
+  }
+  .form-container button {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid white;
+  }
+}
